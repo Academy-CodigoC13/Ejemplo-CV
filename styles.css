@@ -1,0 +1,103 @@
+.debug {
+    border: 1px red solid;
+}
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr 50px;
+    min-height: 100vh;
+}
+hr {
+    border: 1px solid #F0F0F6; /* Establece el color y el grosor de la línea */
+    margin: 20px 0; /* Ajusta el margen según sea necesario */
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+span {
+    font-weight: lighter;
+    font-size: medium;
+}
+.aside-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.aside-profile > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.aside-info {
+    display: flex;
+    justify-content: space-between;
+}
+.aside-languages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.aside-languages > div {
+    width: 100%;
+    height: 8px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    outline: 1px #FFB400 solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.aside-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* h1 {margin: 0;} */
+main {
+    background: #F0F0F6;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-info {
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 50px;
+}
+.main-info > img {
+    width: 200px;
+    height: 200px;
+}
+
+button{
+    background: #FFB400;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.main-knowledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F0F0F6;
+}
+.main-knowledge-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 16px;
+}
+.main-knowledge-card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: white;
+}
